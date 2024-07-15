@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.layers {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-30deg) skew(25deg) scale(1);
+  transition: transform 0.5s;
+}
+
+.layers div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, opacity 0.5s;
+  background-color: inherit;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.layers div:nth-child(1) {
+  background-color: #2e7bf0;
+  transform: translate(40px, -40px);
+  opacity: 0.2;
+}
+
+.layers div:nth-child(2) {
+  background-color: #2e7bf0;
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.layers div:nth-child(3) {
+  background-color: #2e7bf0;
+  transform: translate(120px, -120px);
+  opacity: 0.2;
+}
