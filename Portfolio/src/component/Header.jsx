@@ -9,10 +9,10 @@ const Header = () => {
   };
 
   return (
-    <nav className=" bg-black fixed w-full z-10">
+    <nav className=" fixed w-full z-10 ">
       <div className="container mx-auto px-4 md:px-3 lg:px-9 py-8 flex justify-between items-center">
         <div className="text-white text-3xl font-semibold transition-transform transform hover:scale-95">
-          SmartML
+          SmartML Lab
         </div>
         <div className="hidden lg:flex space-x-10">
           <a href="#home" className="text-slate-400 hover:text-white text-xl">
@@ -45,10 +45,10 @@ const Header = () => {
         <div className="lg:hidden flex items-center">
           <button
             onClick={toggleMenu}
-            className="bg-[#1D2838] text-white p-2 rounded"
+            className="bg-[#1d2838] text-white p-2 rounded-lg"
           >
             {isOpen ? (
-              <FaTimes className="h-6 w-6" />
+              <FaTimes className="h-6 w-6 " />
             ) : (
               <FaBars className="h-6 w-6" />
             )}
@@ -60,7 +60,7 @@ const Header = () => {
       <div
         className={`lg:hidden ${
           isOpen ? "block" : "hidden"
-        } absolute top-18 left-4 right-4 bg-[#151D29] p-4 rounded-lg  opacity-[0.95]`}
+        } absolute top-18 left-4 right-4 bg-[#1d2838] p-4 rounded-lg  opacity-[0.95]`}
         style={{ transition: "0.75s ease-out" }}
       >
         <div className="space-y-2 ">
