@@ -1,5 +1,6 @@
 :root {
-  --accent-a1: #2196f3;
+  --accent-a1: #287dc2;
+  --background-a: black;
 }
 
 .figure-a-hero {
@@ -33,32 +34,73 @@
   background-image: linear-gradient(220deg, rgba(0, 0, 0, 0.8), transparent),
     linear-gradient(50deg, var(--accent-a1), transparent);
   transform-style: preserve-3d;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .figure-a1 {
   opacity: 0.5;
   filter: blur(2px);
   transform: translate3d(0, 0, 4vh) rotateY(30deg);
-  z-index: 3; 
+  z-index: 3;
 }
 
 .figure-a2 {
-  opacity: 1; 
+  opacity: 1;
   transform: translate3d(0, 0, -13vh) rotateY(30deg);
   z-index: 2;
 }
 
 .figure-a3 {
-  opacity: 0.5; 
-  filter: blur(15px); 
+  opacity: 0.5;
+  filter: blur(15px);
   transform: translate3d(0, 0, -26vh) rotateY(30deg);
-  z-index: 1; 
-  margin-top: 30px; /
+  z-index: 1;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 479px) {
   .figure-a-hero {
     height: 300px;
+  }
+}
+
+.section-glow {
+  /* z-index: -1; */
+  width: 100%;
+  height: 1000px;
+  background-image: radial-gradient(
+      circle farthest-side at 50% -170%,
+      transparent,
+      var(--background-a)
+    ),
+    linear-gradient(to bottom, var(--accent-a1), transparent);
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  transform-style: preserve-3d;
+}
+
+.section-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 36px;
+}
+
+@media (max-width: 700px) {
+  .section-main {
+    padding-top: 250px;
+  }
+}
+
+@media (min-width: 701px) {
+  .section-main {
+    padding-top: 300px;
   }
 }

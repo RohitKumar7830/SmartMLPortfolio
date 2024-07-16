@@ -74,7 +74,7 @@ const Features = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[300px]">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[1200px]">
         <div
           className={`text-blue-500 font-thin py-2 px-4 rounded-xl mb-4 border border-[#0751BF] border-opacity-35 tracking-[2px] text-[15px] transition-opacity duration-1000 ${
             visibleElements.includes(elementsRef.current[0])
