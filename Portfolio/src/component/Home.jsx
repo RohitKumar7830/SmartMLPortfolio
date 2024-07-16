@@ -20,14 +20,8 @@ const Home = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <section
-      className=" min-h-screen flex flex-col items-center justify-center pt-36 md:pt-[240px] "
-      style={{
-        background:
-          "radial-gradient(circle at -11% -34%, rgba(7, 81, 191, 0.6) 0%, rgba(7, 81, 191, 1) 0%, rgba(0, 0, 0, 1) 28%)",
-      }}
-    >
-      <div className="max-w-4xl mx-auto px-3 text-center ">
+    <section className="section-glow section-main">
+      <div className="max-w-4xl mx-auto px-3 text-center  ">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-6 ">
           Transforming Industries with AI Innovation
         </h1>
