@@ -74,7 +74,7 @@ const Features = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-20">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[300px]">
         <div
           className={`text-blue-500 font-thin py-2 px-4 rounded-xl mb-4 border border-[#0751BF] border-opacity-35 tracking-[2px] text-[15px] transition-opacity duration-1000 ${
             visibleElements.includes(elementsRef.current[0])
@@ -87,13 +87,17 @@ const Features = () => {
         </div>
         <div className="max-w-5xl md:max-w-7xl lg:max-w-5xl mx-auto text-center mb-14">
           <h1
-            className={`text-4xl md:text-6xl lg:text-7xl font-medium text-white transition-opacity duration-1000 ${
+            className={`text-4xl  md:text-6xl lg:text-7xl font-medium text-white transition-opacity duration-1000 ${
               visibleElements.includes(elementsRef.current[1])
                 ? "opacity-100"
                 : "opacity-0"
             }`}
             ref={(el) => (elementsRef.current[1] = el)}
-            style={{ lineHeight: "1.1" }}
+            style={{
+              lineHeight: "1.1",
+              paddingLeft: "5px",
+              paddingRight: "5px",
+            }}
           >
             Powerful new features for solving challenges
           </h1>

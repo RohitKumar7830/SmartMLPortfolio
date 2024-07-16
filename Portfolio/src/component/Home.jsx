@@ -1,35 +1,34 @@
-// import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Home.css";
 
 const Home = () => {
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollY = window.scrollY;
-  //     const layers = document.querySelector(".layers");
-  //     layers.style.transform = `rotate(-${
-  //       scrollY / 20
-  //     }deg) skew(25deg) scale(1)`;
-  //   };
+  const [rotation, setRotation] = useState(30);
 
-  //   window.addEventListener("scroll", handleScroll);
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+    const maxRotation = 0;
+    const minRotation = 30;
+    const maxScroll =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const newRotation =
+      minRotation - (scrollTop / maxScroll) * (minRotation - maxRotation);
+    setRotation(newRotation);
+  };
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section
-      className=" min-h-screen flex flex-col items-center justify-center pt-36 md:pt-50 "
+      className=" min-h-screen flex flex-col items-center justify-center pt-36 md:pt-[240px] "
       style={{
         background:
-          "radial-gradient(circle at -12% -44%, rgba(7, 81, 191, 0.6) 0%, rgba(7, 81, 191, 1) 0%, rgba(0, 0, 0, 1) 28%)",
+          "radial-gradient(circle at -11% -34%, rgba(7, 81, 191, 0.6) 0%, rgba(7, 81, 191, 1) 0%, rgba(0, 0, 0, 1) 28%)",
       }}
     >
-      <div className="max-w-4xl mx-auto px-3 text-center mb-12">
-        <h1
-          className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-6 "
-          // style={{ lineHeight: "1.3" }}
-        >
+      <div className="max-w-4xl mx-auto px-3 text-center ">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-6 ">
           Transforming Industries with AI Innovation
         </h1>
         <p
@@ -44,20 +43,20 @@ const Home = () => {
           Get Started
         </button>
       </div>
-      {/* <div className="layers sm:hidden md:block md:w-[300px] md:h-[300px] lg:w-[600px] lg:h-[400px] ">
-        <div className="layer  mb-4" style={{ transform: "rotate(30deg)" }}>
-          <div></div>
-        </div>
+      {/* Figure code */}
+      <div
+        className="figure-a-hero"
+        data-w-id="297673ad-47a4-b4b1-8938-0ca16b3d6b41"
+      >
         <div
-          className="layer mb-4"
-          style={{ transform: "rotate(30deg) translate(80px, -80px)" }}
+          className="figure-block-a-hero"
+          style={{ transform: `rotateY(${rotation}deg)` }}
         >
-          <div></div>
+          <div className="figure-a1"></div>
+          <div className="figure-a2"></div>
+          <div className="figure-a3"></div>
         </div>
-        <div className="layer " style={{ transform: "rotate(30deg) " }}>
-          <div></div>
-        </div>
-      </div> */}
+      </div>
     </section>
   );
 };

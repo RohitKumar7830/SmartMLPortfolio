@@ -1,49 +1,64 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
+:root {
+  --accent-a1: #2196f3;
 }
 
-.layers {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin-top: 80px;
-  cursor: pointer;
+.figure-a-hero {
+  width: 80%;
+  height: 450px;
+  perspective: 1300px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  transform: rotate(-30deg) skew(25deg) scale(1);
-  transition: transform 0.5s;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.layers div {
+.figure-block-a-hero {
+  width: 70%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s linear;
+}
+
+.figure-a1,
+.figure-a2,
+.figure-a3 {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.5s, opacity 0.5s;
-  background-color: inherit;
-  font-size: 2rem;
-  color: aliceblue;
+  background-image: linear-gradient(220deg, rgba(0, 0, 0, 0.8), transparent),
+    linear-gradient(50deg, var(--accent-a1), transparent);
+  transform-style: preserve-3d;
+  border-radius: 10px; 
 }
 
-.layers div:nth-child(1) {
-  background-color: #2e7bf0;
-  transform: translate(40px, -40px);
-  opacity: 0.2;
+.figure-a1 {
+  opacity: 0.5;
+  filter: blur(2px);
+  transform: translate3d(0, 0, 4vh) rotateY(30deg);
+  z-index: 3; 
 }
 
-.layers div:nth-child(2) {
-  background-color: #2e7bf0;
-  transform: translate(80px, -80px);
-  opacity: 0.6;
+.figure-a2 {
+  opacity: 1; 
+  transform: translate3d(0, 0, -13vh) rotateY(30deg);
+  z-index: 2;
 }
 
-.layers div:nth-child(3) {
-  background-color: #2e7bf0;
-  transform: translate(120px, -120px);
-  opacity: 0.2;
+.figure-a3 {
+  opacity: 0.5; 
+  filter: blur(15px); 
+  transform: translate3d(0, 0, -26vh) rotateY(30deg);
+  z-index: 1; 
+  margin-top: 30px; /
+}
+
+@media screen and (max-width: 479px) {
+  .figure-a-hero {
+    height: 300px;
+  }
 }
