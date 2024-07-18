@@ -2,6 +2,7 @@ import Features from "./component/Features";
 import Header from "./component/Header";
 import Home from "./component/Home";
 import SmartContracts from "./component/SmartContracts";
+import Stats from "./component/Stats";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Home />
       <Features />
       <SmartContracts />
+      <Stats />
     </div>
   );
 }

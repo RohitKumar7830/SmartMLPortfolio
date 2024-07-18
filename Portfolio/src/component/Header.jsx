@@ -7,7 +7,14 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  const phoneMenu = {
+    borderRadius: " 15px",
+    marginLeft: "30px",
+    marginRight: "30px",
+    backgroundColor: "rgba(0, 0, 0, 0)",
+    backgroundImage:
+      "linear-gradient(150deg, rgba(29, 40, 56) 35%, rgba(21, 29, 41, 0.75))",
+  };
   return (
     <nav className=" fixed w-full z-10 ">
       <div className="container mx-auto px-4 md:px-3 lg:px-9 py-8 flex justify-between items-center">
@@ -60,8 +67,8 @@ const Header = () => {
       <div
         className={`lg:hidden ${
           isOpen ? "block" : "hidden"
-        } absolute top-18 left-4 right-4 bg-[#1d2838] p-4 rounded-lg  opacity-[0.95]`}
-        style={{ transition: "0.75s ease-out" }}
+        } absolute top-18 left-4 right-4  p-4  opacity-[0.95]`}
+        style={{ ...phoneMenu, transition: "0.75s ease-out" }}
       >
         <div className="space-y-2 ">
           <a
