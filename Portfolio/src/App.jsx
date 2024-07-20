@@ -1,4 +1,5 @@
 import Collab from "./component/Collab";
+import Developer from "./component/Developer";
 import Features from "./component/Features";
 import Header from "./component/Header";
 import Home from "./component/Home";
@@ -14,6 +15,7 @@ export default function App() {
       <SmartContracts />
       <Stats />
       <Collab />
+      <Developer />
     </div>
   );
 }

@@ -76,7 +76,7 @@ const Features = () => {
     <>
       <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[1200px]">
         <div
-          className={`text-blue-500 font-thin py-2 px-4 rounded-xl mb-4 border border-[#0751BF] border-opacity-35 tracking-[2px] text-[15px] transition-opacity duration-1000 ${
+          className={`text-blue-500 font-thin py-2 px-4 rounded-xl mb-4 border border-[#0751BF] border-opacity-35 tracking-[2px] text-[13px] transition-opacity duration-1000 ${
             visibleElements.includes(elementsRef.current[0])
               ? "opacity-100"
               : "opacity-0"
@@ -87,7 +87,7 @@ const Features = () => {
         </div>
         <div className="max-w-5xl md:max-w-7xl lg:max-w-5xl mx-auto text-center mb-14">
           <h1
-            className={`text-4xl  md:text-6xl lg:text-7xl font-medium text-white transition-opacity duration-1000 ${
+            className={`text-4xl  md:text-6xl lg:text-[66px] font-medium text-white transition-opacity duration-1000 ${
               visibleElements.includes(elementsRef.current[1])
                 ? "opacity-100"
                 : "opacity-0"
@@ -95,14 +95,14 @@ const Features = () => {
             ref={(el) => (elementsRef.current[1] = el)}
             style={{
               lineHeight: "1.1",
-              paddingLeft: "5px",
-              paddingRight: "5px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
             }}
           >
             Powerful new features for solving challenges
           </h1>
         </div>
-        <div className="flex items-center justify-center bg-black pb-8">
+        <div className="flex items-center justify-center bg-black pb-8 lg:px-[140px]">
           <div className="grid gap-6 p-4 w-full max-w-7xl grid-cols-1 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 ">
             {icons.map(({ img, title, description }, index) => (
               <div
@@ -119,7 +119,7 @@ const Features = () => {
                   className="rounded-xl p-6 mb-5 flex items-center justify-center w-20 h-20 "
                   style={{
                     background:
-                      "rgb(21,30,42) linear-gradient(174deg, rgba(21,30,42,1) 45%, rgba(0,0,0,1) 100%)",
+                      "rgb(21,30,42) linear-gradient(174deg, rgba(21,30,42,1) 45%, rgba(0,10,0,1) 100%)",
                   }}
                 >
                   <img src={img} alt={title} className="h-20 w-20 mb-2" />
