@@ -36,7 +36,7 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="section bg-black pt-[200px] pb-32 sm:px-11 px-8">
+    <div className="section bg-black pt-[200px] pb-5 sm:px-11 px-8">
       <div className="content max-w-screen-xl mx-auto flex flex-col items-center">
         <div className="w-full grid lg:grid-cols-[1.4fr_1fr] gap-6 lg:gap-[125px]">
           <div className="flex flex-col justify-center items-start text-white mt-6 order-1 lg:order-2">
