@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import MoneyImg from "../assets/Money.svg";
-import SecurityImg from "../assets/security.svg";
-import GovernanceImg from "../assets/Governance.svg";
-import AgencyImg from "../assets/Agency.svg";
-import ReliabilityImg from "../assets/Reliability.svg";
-import InteroperabilityImg from "../assets/Interoperability.svg";
+import MoneyImg from "../../assets/Money.svg";
+import SecurityImg from "../../assets/security.svg";
+import GovernanceImg from "../../assets/Governance.svg";
+import AgencyImg from "../../assets/Agency.svg";
+import ReliabilityImg from "../../assets/Reliability.svg";
+import InteroperabilityImg from "../../assets/Interoperability.svg";
 
 const icons = [
   {

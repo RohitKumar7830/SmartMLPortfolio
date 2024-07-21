@@ -1,10 +1,11 @@
-import Collab from "./component/Collab";
-import Developer from "./component/Developer";
-import Features from "./component/Features";
 import Header from "./component/Header";
-import Home from "./component/Home";
-import SmartContracts from "./component/SmartContracts";
-import Stats from "./component/Stats";
+import Banner from "./component/HomePage/Banner";
+import Collab from "./component/HomePage/Collab";
+import Developer from "./component/HomePage/Developer";
+import Features from "./component/HomePage/Features";
+import Home from "./component/HomePage/Home";
+import SmartContracts from "./component/HomePage/SmartContracts";
+import Stats from "./component/HomePage/Stats";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Stats />
       <Collab />
       <Developer />
+      <Banner />
     </div>
   );
 }
