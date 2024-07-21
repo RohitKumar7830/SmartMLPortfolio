@@ -63,8 +63,6 @@
   transform: translate3d(0, 0, -21vh);
 }
 
-/* Smart.css */
-
 @media screen and (max-width: 479px) {
   .figure-b {
     height: 250px;

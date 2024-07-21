@@ -59,7 +59,7 @@ const Collab = () => {
       <div className="max-w-5xl md:max-w-7xl lg:max-w-5xl mx-auto text-center mb-14">
         <h1
           ref={addToRefs}
-          className="title text-4xl md:text-6xl lg:text-7xl font-medium text-white transition-opacity duration-1000"
+          className="title text-4xl md:text-6xl lg:text-[66px] font-medium text-white transition-opacity duration-1000"
           style={{
             lineHeight: "1.1",
             paddingLeft: "15px",
