@@ -1,30 +1,32 @@
 import { useState, useRef, useEffect } from "react";
-import "./Banner.css"; // Ensure you have the CSS for animations
+import "./Banner.css";
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState(false);
   const bannerRef = useRef(null);
 
   useEffect(() => {
+    const currentBannerRef = bannerRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.unobserve(entry.target); // Stop observing once it becomes visible
+            observer.unobserve(entry.target);
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    if (bannerRef.current) {
-      observer.observe(bannerRef.current);
+    if (currentBannerRef) {
+      observer.observe(currentBannerRef);
     }
 
     return () => {
-      if (bannerRef.current) {
-        observer.unobserve(bannerRef.current);
+      if (currentBannerRef) {
+        observer.unobserve(currentBannerRef);
       }
     };
   }, []);
