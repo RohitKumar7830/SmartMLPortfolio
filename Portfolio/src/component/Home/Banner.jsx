@@ -32,7 +32,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="section banner pb-12 bg-black">
+    <div className="section banner pb-8 bg-black">
       <div className="flex flex-col items-center px-5 sm:px-10 py-32 overflow-hidden">
         <div
           className={`w-full px-7 md:px-20 lg:px-[140px] flex flex-col items-center ${
@@ -48,7 +48,7 @@ const Banner = () => {
             }}
           >
             <div className="block-banner z-10 w-full max-w-screen-md flex flex-col items-center relative">
-              <h3 className="text-white tracking-tight mb-4 sm:mb-7 text-2xl md:text-6xl lg:text-[55px] font-medium leading-tight">
+              <h3 className="text-white tracking-tight mb-4 sm:mb-7 text-2xl md:text-5xl lg:text-[55px] font-medium leading-tight">
                 Stay informed and never miss a Core update!
               </h3>
               <div className="form-block-banner w-full flex flex-col items-center">

@@ -39,7 +39,7 @@ const SmartContracts = () => {
   }, []);
 
   return (
-    <div className="w-full px-7 md:px-20 lg:px-[140px] bg-black pt-[200px] pb-32">
+    <div className="w-full px-7 md:px-20 lg:px-[75px] bg-black pt-[200px] pb-32">
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Contracts Box */}
         <div className="p-6 lg:flex lg:flex-col lg:justify-start lg:items-start text-center lg:text-left">

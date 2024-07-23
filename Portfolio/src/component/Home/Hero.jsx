@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Home.css";
+import "./Hero.css";
 
 const Home = () => {
   const [rotation, setRotation] = useState(30);

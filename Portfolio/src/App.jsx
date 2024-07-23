@@ -1,23 +1,22 @@
-import Header from "./component/Header";
-import Banner from "./component/HomePage/Banner";
-import Collab from "./component/HomePage/Collab";
-import Developer from "./component/HomePage/Developer";
-import Features from "./component/HomePage/Features";
-import Home from "./component/HomePage/Home";
-import SmartContracts from "./component/HomePage/SmartContracts";
-import Stats from "./component/HomePage/Stats";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import About from "./pages/About/About";
+import Home from "./pages/Home/Home";
+import Technology from "./pages/Technology/Technology";
+import Contact from "./pages/Contact/Contact";
+import Header from "./component/Header/Header";
+import Footer from "./component/Footer/Footer";
 export default function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Home />
-      <Features />
-      <SmartContracts />
-      <Stats />
-      <Collab />
-      <Developer />
-      <Banner />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/technology" element={<Technology />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }

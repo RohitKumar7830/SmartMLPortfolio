@@ -74,5 +74,6 @@
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   .figure-b {
     height: 350px;
+    margin-top: 146px;
   }
 }
