@@ -19,10 +19,12 @@ const Hero = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <section className="section-glow section-main">
-      <div className="max-w-4xl mx-auto px-3 text-center  ">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-6 ">
+    <section className="relative flex flex-col items-center justify-start py-32 px-10 bg-black overflow-hidden">
+      <div className="glow-top absolute inset-0 top-[-70px] w-full h-[500px] bg-[radial-gradient(circle_farthest-side_at_50%_-170%,_transparent,_black),linear-gradient(to_bottom,_#3183ff,_transparent)] opacity-80"></div>
+      <div className="max-w-5xl mx-auto px-3 text-center pt-32 pb-8 relative z-10">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-6">
           Transforming Industries with AI Innovation
         </h1>
         <p
@@ -37,7 +39,6 @@ const Hero = () => {
           Explore
         </button>
       </div>
-      {/* Figure code */}
       <div
         className="figure-a-hero"
         data-w-id="297673ad-47a4-b4b1-8938-0ca16b3d6b41"
