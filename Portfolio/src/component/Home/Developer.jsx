@@ -39,7 +39,7 @@ const Developer = () => {
   }, []);
 
   return (
-    <div className="w-full px-7 md:px-20 lg:px-[140px] bg-black pt-[200px] pb-32">
+    <div className="w-full px-7 md:px-20 lg:px-[140px] bg-black pt-[150px] pb-32">
       <div className="developer-layout">
         {/* Developers Box */}
         <div className="developers p-6 lg:flex lg:flex-col lg:justify-start lg:items-start text-center lg:text-left">
