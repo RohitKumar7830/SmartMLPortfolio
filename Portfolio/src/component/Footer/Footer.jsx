@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className="section footer pt-8 pb-20 bg-black  px-7 md:px-20 lg:px-[140px]">
@@ -5,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row sm:justify-between gap-10">
           <div className="block-footer flex flex-col items-center sm:items-start text-center sm:text-left lg:w-[400px] ">
             <p className=" h-9 mb-7 text-white text-2xl font-semibold">
-              SmartML Lab
+              SmartML Labs
             </p>
             <p className="paragraph-footer lg:pr-5 mb-0 text-base leading-7 text-[#616d7e] ">
               SmartML Labs is an AI-based startup dedicated to creating
@@ -25,24 +27,24 @@ const Footer = () => {
             <div className="heading-footer text-lg font-medium  mt-1 mb-8 text-white">
               Quick Links
             </div>
-            <a
-              href="/about"
+            <Link
+              to="/"
               className="link-footer text-base leading-7 text-[#616d7e] hover:text-white mb-1"
             >
               About
-            </a>
-            <a
-              href="/technology"
+            </Link>
+            <Link
+              to="/technology"
               className="link-footer text-base leading-7 text-[#616d7e] hover:text-white mb-1"
             >
               Technology
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="link-footer text-base leading-7 text-[#616d7e] hover:text-white mb-1"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="block-footer flex flex-col items-center sm:items-start text-center sm:text-left ">
             <div className="heading-footer text-lg font-medium text-white  mt-1 mb-8">

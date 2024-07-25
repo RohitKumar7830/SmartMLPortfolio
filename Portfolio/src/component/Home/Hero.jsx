@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Hero.css";
 
-const Home = () => {
+const Hero = () => {
   const [rotation, setRotation] = useState(30);
 
   const handleScroll = () => {
@@ -34,7 +34,7 @@ const Home = () => {
           experiences.
         </p>
         <button className="bg-[#2196F3] bg-gradient-to-r from-[#2196F3] to-[#0D3269] text-white text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#0751BF] hover:scale-95">
-          Get Started
+          Explore
         </button>
       </div>
       {/* Figure code */}
@@ -55,4 +55,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

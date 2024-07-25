@@ -22,7 +22,7 @@ const Header = () => {
     <nav className="fixed w-full z-10">
       <div className="container mx-auto px-4 md:px-3 lg:px-9 py-8 flex justify-between items-center">
         <div className="text-white text-3xl font-semibold transition-transform transform hover:scale-95">
-          SmartML Lab
+          SmartML Labs
         </div>
         <div className="hidden lg:flex space-x-10">
           <Link to="/" className="text-slate-400 hover:text-white text-xl">
@@ -47,7 +47,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex items-center space-x-4">
           <button className="bg-slate-700 text-white px-4 py-2 rounded-lg hover:bg-[#3183FF] text-lg transition-transform transform hover:scale-95">
-            Get Started
+            Explore
           </button>
         </div>
         <div className="lg:hidden flex items-center">
