@@ -1,9 +1,8 @@
 :root {
-  --accent-a1: #287dc2;
+  --accent-a1: #aa55f4;
   --background-a: black;
 }
-
-.figure-a-hero {
+/* .figure-a-hero {
   width: 80%;
   height: 450px;
   perspective: 1300px;
@@ -12,9 +11,9 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-}
+} */
 
-.figure-block-a-hero {
+/* .figure-block-a-hero {
   width: 70%;
   height: 100%;
   transform-style: preserve-3d;
@@ -23,9 +22,9 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.1s linear;
-}
+} */
 
-.figure-a1,
+/* .figure-a1,
 .figure-a2,
 .figure-a3 {
   position: absolute;
@@ -35,9 +34,9 @@
     linear-gradient(50deg, var(--accent-a1), transparent);
   transform-style: preserve-3d;
   border-radius: 10px;
-}
+} */
 
-.figure-a1 {
+/* .figure-a1 {
   opacity: 0.5;
   filter: blur(2px);
   transform: translate3d(0, 0, 4vh) rotateY(30deg);
@@ -64,34 +63,6 @@
   }
 }
 
-/* .section-glow {
-  width: 100%;
-  height: 1000px;
-  background-image: radial-gradient(
-      circle farthest-side at 50% -170%,
-      transparent,
-      var(--background-a)
-    ),
-    linear-gradient(to bottom, var(--accent-a1), transparent);
-  position: absolute;
-  top: -70px;
-  left: 0;
-  right: 0;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  opacity: 1;
-  transform-style: preserve-3d;
-}
-
-.section-main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 36px;
-} */
-
 @media (max-width: 700px) {
   .section-main {
     padding-top: 250px;
@@ -102,4 +73,4 @@
   .section-main {
     padding-top: 300px;
   }
-}
+} */

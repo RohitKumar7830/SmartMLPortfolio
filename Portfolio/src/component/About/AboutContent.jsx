@@ -1,11 +1,49 @@
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const AboutContent = () => {
+  const headingRef = useRef(null);
+  const paragraphRef = useRef(null);
+
+  useEffect(() => {
+    const elements = [headingRef.current, paragraphRef.current];
+
+    elements.forEach((element, index) => {
+      gsap.fromTo(
+        element,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: index * 0.2,
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "bottom 60%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
-    <div className="bg-black min-h-screen flex flex-col items-center  py-32 px-4">
-      <div className="w-full max-w-[720px] ">
-        <h1 className="text-3xl font-bold mb-6 text-white md:text-5xl">
+    <div className="bg-black min-h-screen flex flex-col items-center py-32 px-4">
+      <div className="w-full max-w-[720px]">
+        <h1
+          ref={headingRef}
+          className="text-3xl font-bold mb-6 text-white md:text-5xl"
+        >
           We are a community of passionate humans building a distributed cloud
         </h1>
-        <p className="text-lg text-[#616d7e] leading-relaxed">
+        <p
+          ref={paragraphRef}
+          className="text-lg text-[#616d7e] leading-relaxed"
+        >
           Pulvinar duis eget tellus suscipit amet neque, purus. Auctor sed
           accumsan gravida felis massa ornare in. Iaculis quis lectus convallis
           proin proin leo. Convallis pellentesque eget at ultricies amet

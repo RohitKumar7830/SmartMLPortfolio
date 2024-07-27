@@ -103,6 +103,10 @@ const Functionality = () => {
               src={func.imgSrc}
               alt={func.title}
               className="w-[44px] h-[44px] mb-[22px]"
+              style={{
+                filter:
+                  "invert(51%) sepia(69%) saturate(5784%) hue-rotate(258deg) brightness(100%) contrast(101%)",
+              }}
             />
             <h2 className="text-white text-[24px] font-semibold leading-[130%] tracking-[-0.5px] mt-0 mb-[18px]">
               {func.title}

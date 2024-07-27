@@ -1,10 +1,10 @@
 const ContactSection = () => {
   return (
     <section className="relative flex flex-col items-center justify-start py-32 px-10 bg-black overflow-hidden">
-      <div className="absolute inset-0 top-[-70px] w-full h-[500px] bg-[radial-gradient(circle_farthest-side_at_50%_-170%,_transparent,_black),linear-gradient(to_bottom,_#3183ff,_transparent)] opacity-[1.8]"></div>
+      <div className="absolute inset-0 top-[-70px] w-full h-[500px] bg-[radial-gradient(circle_farthest-side_at_50%_-170%,_transparent,_black),linear-gradient(to_bottom,_#aa55f4,_transparent)] opacity-[0.8]"></div>
       <div className="mt-[10vh] max-w-[1200px] w-full flex flex-col items-center">
         <div className="text-center flex flex-col items-center relative z-10">
-          <div className="border-2 border-[#1d2838] text-[#3183FF] uppercase text-xs font-medium px-4 py-2 rounded-xl mb-4 tracking-wider">
+          <div className="border-2 border-[#aa55f4] text-[#aa55f4] uppercase text-xs font-medium px-4 py-2 rounded-xl mb-4 tracking-wider">
             Contact
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold text-white mb-6">
@@ -25,7 +25,7 @@ const ContactSection = () => {
           className="grid gap-4 "
         >
           <input
-            className="h-14 bg-[#0A0E14] text-white rounded-lg px-4 text-lg border border-[#182233] focus:border-[#3183FF] outline-none"
+            className="h-14 bg-[#0A0E14] text-white rounded-lg px-4 text-lg border border-[#182233] focus:border-[#aa55f4] outline-none"
             maxLength="256"
             name="First-Name"
             placeholder="First Name"
@@ -33,7 +33,7 @@ const ContactSection = () => {
             id="First-Name"
           />
           <input
-            className="h-14 bg-[#0A0E14] text-white rounded-lg px-4 text-lg border border-[#182233] focus:border-[#3183FF] outline-none"
+            className="h-14 bg-[#0A0E14] text-white rounded-lg px-4 text-lg border border-[#182233] focus:border-[#aa55f4] outline-none"
             maxLength="256"
             name="Last-Name"
             placeholder="Last Name"
@@ -41,7 +41,7 @@ const ContactSection = () => {
             id="Last-Name"
           />
           <input
-            className="h-14 bg-[#0A0E14] text-white rounded-lg px-4 text-lg border border-[#182233] focus:border-[#3183FF] outline-none"
+            className="h-14 bg-[#0A0E14] text-white rounded-lg px-4 text-lg border border-[#182233] focus:border-[#aa55f4] outline-none"
             maxLength="256"
             name="Email-Address"
             placeholder="Email Address"
@@ -50,7 +50,7 @@ const ContactSection = () => {
             required
           />
           <textarea
-            className="h-auto max-h-[350px] min-h-[200px] w-full bg-[#0A0E14] text-white border border-[#182233] rounded-lg px-4 py-4 text-lg focus:border-[#3183FF] outline-none"
+            className="h-auto max-h-[350px] min-h-[200px] w-full bg-[#0A0E14] text-white border border-[#182233] rounded-lg px-4 py-4 text-lg focus:border-[#aa55f4] outline-none"
             placeholder="Your Message"
             maxLength="5000"
             id="Message"
@@ -59,7 +59,7 @@ const ContactSection = () => {
           <div className="flex justify-center">
             <input
               type="submit"
-              className="bg-[#2196F3] bg-gradient-to-r from-[#2196F3] to-[#0D3269] text-white text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#0751BF] hover:scale-95 cursor-pointer"
+              className="bg-[#aa55f4] bg-gradient-to-r from-[#aa55f4] to-[#6a1bf0] text-white text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#6a1bf0] hover:scale-95 cursor-pointer"
               value="Submit"
             />
           </div>
