@@ -45,7 +45,7 @@ const WlcmSmart = () => {
         <div className="developers p-6 lg:flex lg:flex-col lg:justify-start lg:items-start text-center lg:text-left">
           <div className="flex justify-center lg:justify-start">
             <div
-              className="text-blue-500 font-thin py-2 px-4 rounded-xl mb-4 border border-[#0751BF] border-opacity-35 tracking-[2px] text-[15px] opacity-0 "
+              className="text-[#aa55f4] font-thin py-2 px-4 rounded-xl mb-4 border border-[#aa55f4] border-opacity-35 tracking-[2px] text-[15px] opacity-0 "
               ref={(el) => (elementsRef.current[0] = el)}
             >
               WELCOME TO SMARTML LABS

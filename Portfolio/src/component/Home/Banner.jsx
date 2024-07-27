@@ -60,7 +60,7 @@ const Banner = () => {
                   aria-label="Email Form"
                 >
                   <input
-                    className="text-field h-12 sm:h-14 border border-gray-800 bg-[#0E141D] text-white rounded-xl mb-2 sm:mb-0 px-4 py-2 text-base sm:text-lg font-normal transition duration-400 ease-in-out"
+                    className="text-field h-12 sm:h-14 border border-gray-800 bg-[#0E141D] text-white rounded-xl mb-2 sm:mb-0 px-4 py-2 text-base sm:text-lg font-normal transition duration-400 ease-in-out focus:border-[#aa55f4] outline-none"
                     maxLength="256"
                     name="Email"
                     data-name="Email"
@@ -72,7 +72,7 @@ const Banner = () => {
                   <input
                     type="submit"
                     data-wait="Please wait..."
-                    className="bg-[#2196F3] bg-gradient-to-r from-[#2196F3] to-[#0D3269] text-white text-xl md:text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#0751BF] hover:scale-95"
+                    className="bg-[#aa55f4] bg-gradient-to-r from-[#aa55f4] to-[#6a1bf0] text-white text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#6a1bf0] hover:scale-95"
                     value="Subscribe"
                   />
                 </form>
@@ -96,7 +96,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-            <div className="glow-banner z-0 h-64 bg-[#3183ff] opacity-60 filter blur-[65px] rounded-full absolute top-[-230px] bottom-auto left-[10%] right-[10%]"></div>
+            <div className="glow-banner z-0 h-64 bg-[#aa55f4] opacity-60 filter blur-[65px] rounded-full absolute top-[-230px] bottom-auto left-[10%] right-[10%]"></div>
           </div>
         </div>
       </div>

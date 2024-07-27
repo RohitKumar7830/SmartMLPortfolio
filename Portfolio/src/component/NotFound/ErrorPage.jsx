@@ -13,7 +13,7 @@ const ErrorPage = () => {
         className="bg-black shadow-md rounded-lg px-8 py-[50px] max-w-sm w-full"
         style={{
           boxShadow: "0 0 200px -70px var(--accent-a1)",
-          "--accent-a1": "#3183ff",
+          "--accent-a1": "#aa55f4",
         }}
       >
         <div className="flex justify-center mb-4">
@@ -29,7 +29,7 @@ const ErrorPage = () => {
         <div className="flex justify-center">
           <button
             onClick={handleBackToHome}
-            className="bg-[#2196F3] bg-gradient-to-r from-[#2196F3] to-[#0D3269] text-white text-xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#0751BF] hover:scale-95"
+            className="bg-[#aa55f4] bg-gradient-to-r from-[#aa55f4] to-[#6a1bf0] text-white text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#6a1bf0] hover:scale-95"
           >
             Back to Home
           </button>

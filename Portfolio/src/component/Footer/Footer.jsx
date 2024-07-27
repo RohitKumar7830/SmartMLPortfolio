@@ -65,11 +65,11 @@ const Footer = () => {
               Twitter
             </a>
             <a
-              href="https://www.youtube.com/c/Webflow"
+              href="https://www.linkedin.com/company/smartml-labs/posts/?feedView=all"
               target="_blank"
               className="link-footer text-base leading-7 text-[#616d7e] hover:text-white"
             >
-              YouTube
+              Linkedin
             </a>
           </div>
           <div className="block-footer flex flex-col items-center sm:items-start text-center sm:text-left ">

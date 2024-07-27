@@ -52,7 +52,7 @@ const Collab = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[200px] pb-16">
       <div
         ref={addToRefs}
-        className="text-blue-500 font-thin py-2 px-4 rounded-xl mb-4 border border-[#0751BF] border-opacity-35 tracking-[2px] text-[15px] transition-opacity duration-1000"
+        className="text-[#aa55f4] font-thin py-2 px-4 rounded-xl mb-4 border border-[#aa55f4] border-opacity-35 tracking-[2px] text-[15px] transition-opacity duration-1000"
       >
         BACKED BY
       </div>

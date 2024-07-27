@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./Stats.css";
+import { Link } from "react-router-dom";
 
 const Stats = () => {
   const elementsRef = useRef([]);
@@ -42,7 +43,7 @@ const Stats = () => {
           <div className="flex flex-col justify-center items-start text-white mt-6 order-1 lg:order-2">
             <div
               ref={(el) => (elementsRef.current[0] = el)}
-              className="subtitle border-2 border-gray-800 text-blue-500 tracking-wider uppercase rounded-md mb-4 py-2 px-4 text-sm font-medium"
+              className="subtitle border-2 border-[#aa55f4] text-[#aa55f4] tracking-[2px] uppercase rounded-xl mb-4 py-2 px-4 text-sm font-medium"
             >
               Stats
             </div>
@@ -66,12 +67,12 @@ const Stats = () => {
               ref={(el) => (elementsRef.current[3] = el)}
               className="grid-button grid gap-3"
             >
-              <a
-                href="#"
-                className="bg-[#2196F3] bg-gradient-to-r from-[#2196F3] to-[#0D3269] text-white text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#0751BF] hover:scale-95"
+              <Link
+                to="/about"
+                className="bg-[#aa55f4] bg-gradient-to-r from-[#aa55f4] to-[#6a1bf0] text-white text-2xl py-3 px-6 rounded-xl shadow-lg duration-300 transform transition-transform hover:bg-[#6a1bf0] hover:scale-95"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
           <div className="block-left w-full grid gap-6 text-white order-2 lg:order-1 px-[25px] py-4">

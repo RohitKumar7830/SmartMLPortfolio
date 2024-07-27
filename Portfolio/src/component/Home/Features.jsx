@@ -75,9 +75,9 @@ const Features = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[200px]">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-black pt-[100px]">
       <div
-        className={`text-blue-500 font-thin py-2 px-4 rounded-xl mb-4 border border-[#0751BF] border-opacity-35 tracking-[2px] text-[13px] transition-opacity duration-1000 ${
+        className={`text-[#aa55f4] font-thin py-2 px-4 rounded-xl mb-4 border border-[#aa55f4] border-opacity-35 tracking-[2px] text-[13px] transition-opacity duration-1000 ${
           visibleElements.includes(elementsRef.current[0])
             ? "opacity-100"
             : "opacity-0"
@@ -116,14 +116,16 @@ const Features = () => {
               }`}
               style={{ transitionDelay: `${index * 0.2}s` }}
             >
-              <div
-                className="rounded-xl p-6 mb-5 flex items-center justify-center w-20 h-20 "
-                style={{
-                  background:
-                    "rgb(21,30,42) linear-gradient(174deg, rgba(21,30,42,1) 45%, rgba(0,10,0,1) 100%)",
-                }}
-              >
-                <img src={img} alt={title} className="h-20 w-20 mb-2" />
+              <div className="rounded-xl p-6 mb-5 flex items-center justify-center w-20 h-20 bg-[#0A0D13]">
+                <img
+                  src={img}
+                  alt={title}
+                  className="h-20 w-20 mb-2"
+                  style={{
+                    filter:
+                      "invert(51%) sepia(69%) saturate(5784%) hue-rotate(258deg) brightness(100%) contrast(101%)",
+                  }}
+                />
               </div>
               <h2 className="text-xl md:text-2xl font-semibold mb-5">
                 {title}
